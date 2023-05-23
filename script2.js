@@ -60,7 +60,9 @@ $(document).ready(function(){
       name = $('#name').val();
       // email = $('#email').val();
       body = $('#body').val();
-      window.location = "mailto:sabinbhurtel@gmail.com?subject=" + subject + "&body= From:" + name +" " + body;
+      ebody = 'First Name: ' + firstname + '\r\n' + body;
+      ebody = encodeURIComponent(ebody);
+      window.location = "mailto:sabinbhurtel@gmail.com?subject=" + subject + "&body=" + ebody;
     });
 
     // owl carousel script
