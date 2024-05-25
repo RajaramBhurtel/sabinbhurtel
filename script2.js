@@ -60,7 +60,7 @@ $(document).ready(function(){
       name = $('#name').val();
       // email = $('#email').val();
       body = $('#body').val();
-      ebody = 'First Name: ' + firstname + '\r\n' + body;
+      ebody = 'First Name: ' + name + '\r\n' + body;
       ebody = encodeURIComponent(ebody);
       window.location = "mailto:sabinbhurtel@gmail.com?subject=" + subject + "&body=" + ebody;
     });
